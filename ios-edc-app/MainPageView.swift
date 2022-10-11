@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainPageView: View {
-    @State private var showNewOrderView = false
+    @State private var showOrderPickUpView = false
     @State private var showMembershipView = false
 
     
@@ -41,7 +41,7 @@ struct MainPageView: View {
                         .frame(height: 200)
                     
                     HStack{
-                        Button(action:{showNewOrderView = true}){
+                        Button(action:{showOrderPickUpView = true}){
                             // Some Actions here
                             Text("Order Now")
                                 .font(.btnLable)
@@ -53,7 +53,7 @@ struct MainPageView: View {
                         }
                         .padding()
                         
-                        NavigationLink("", destination:  NewOrderView(), isActive: $showNewOrderView)
+                        NavigationLink("", destination:  OrderPickUpView(), isActive: $showOrderPickUpView)
 
                     }
                     

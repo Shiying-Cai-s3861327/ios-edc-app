@@ -26,9 +26,12 @@
 		C020CA4128DF414A00807B74 /* PromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA4028DF414A00807B74 /* PromotionView.swift */; };
 		C020CA4328DF416F00807B74 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA4228DF416F00807B74 /* AccountView.swift */; };
 		C020CA4928DF458800807B74 /* NaviTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA4828DF458800807B74 /* NaviTabView.swift */; };
-		C020CA4B28E1764F00807B74 /* NewOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA4A28E1764F00807B74 /* NewOrderView.swift */; };
+		C020CA4B28E1764F00807B74 /* OrderPickUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA4A28E1764F00807B74 /* OrderPickUpView.swift */; };
 		C020CA4D28E18B3F00807B74 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C020CA4C28E18B3F00807B74 /* SourceSansPro-Bold.ttf */; };
 		C020CA5128EAF33700807B74 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5028EAF33700807B74 /* MembershipView.swift */; };
+		C020CA5328F2817100807B74 /* OrderDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5228F2817100807B74 /* OrderDeliveryView.swift */; };
+		C020CA5528F28A1100807B74 /* NewAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5428F28A1100807B74 /* NewAddressView.swift */; };
+		C020CA5728F2DE5200807B74 /* PickUpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +56,12 @@
 		C020CA4028DF414A00807B74 /* PromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionView.swift; sourceTree = "<group>"; };
 		C020CA4228DF416F00807B74 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		C020CA4828DF458800807B74 /* NaviTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTabView.swift; sourceTree = "<group>"; };
-		C020CA4A28E1764F00807B74 /* NewOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderView.swift; sourceTree = "<group>"; };
+		C020CA4A28E1764F00807B74 /* OrderPickUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPickUpView.swift; sourceTree = "<group>"; };
 		C020CA4C28E18B3F00807B74 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
 		C020CA5028EAF33700807B74 /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
+		C020CA5228F2817100807B74 /* OrderDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDeliveryView.swift; sourceTree = "<group>"; };
+		C020CA5428F28A1100807B74 /* NewAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddressView.swift; sourceTree = "<group>"; };
+		C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,11 @@
 				C020CA4028DF414A00807B74 /* PromotionView.swift */,
 				C020CA4228DF416F00807B74 /* AccountView.swift */,
 				C020CA4828DF458800807B74 /* NaviTabView.swift */,
-				C020CA4A28E1764F00807B74 /* NewOrderView.swift */,
+				C020CA4A28E1764F00807B74 /* OrderPickUpView.swift */,
 				C020CA5028EAF33700807B74 /* MembershipView.swift */,
+				C020CA5228F2817100807B74 /* OrderDeliveryView.swift */,
+				C020CA5428F28A1100807B74 /* NewAddressView.swift */,
+				C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */,
 			);
 			path = "ios-edc-app";
 			sourceTree = "<group>";
@@ -208,17 +217,20 @@
 			files = (
 				C020CA4328DF416F00807B74 /* AccountView.swift in Sources */,
 				C020CA3B28DEDBA100807B74 /* CreatePwdView.swift in Sources */,
+				C020CA5728F2DE5200807B74 /* PickUpInfoView.swift in Sources */,
 				C020CA1A28DAF2A200807B74 /* ContentView.swift in Sources */,
 				C020CA3328DC093500807B74 /* ForgotPwdView.swift in Sources */,
 				C020CA1828DAF2A200807B74 /* ios_edc_appApp.swift in Sources */,
 				C020CA3F28DF413B00807B74 /* ShoppingCartView.swift in Sources */,
+				C020CA5528F28A1100807B74 /* NewAddressView.swift in Sources */,
 				C020CA5128EAF33700807B74 /* MembershipView.swift in Sources */,
 				C020CA3528DC899D00807B74 /* RegisterView.swift in Sources */,
 				C020CA3928DDE6C400807B74 /* SendEmailView.swift in Sources */,
 				C020CA4128DF414A00807B74 /* PromotionView.swift in Sources */,
 				C020CA3028DB457200807B74 /* SignInView.swift in Sources */,
 				C020CA2E28DB356800807B74 /* FontStyles.swift in Sources */,
-				C020CA4B28E1764F00807B74 /* NewOrderView.swift in Sources */,
+				C020CA4B28E1764F00807B74 /* OrderPickUpView.swift in Sources */,
+				C020CA5328F2817100807B74 /* OrderDeliveryView.swift in Sources */,
 				C020CA3D28DEEC0700807B74 /* MainPageView.swift in Sources */,
 				C020CA4928DF458800807B74 /* NaviTabView.swift in Sources */,
 			);
