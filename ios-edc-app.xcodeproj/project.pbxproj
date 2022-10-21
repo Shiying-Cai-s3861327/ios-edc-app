@@ -32,6 +32,26 @@
 		C020CA5328F2817100807B74 /* OrderDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5228F2817100807B74 /* OrderDeliveryView.swift */; };
 		C020CA5528F28A1100807B74 /* NewAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5428F28A1100807B74 /* NewAddressView.swift */; };
 		C020CA5728F2DE5200807B74 /* PickUpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */; };
+		C08E19802900E6EB00DEBEB3 /* OrderSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E197F2900E6EB00DEBEB3 /* OrderSelect.swift */; };
+		C08E19822900E9B000DEBEB3 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19812900E9B000DEBEB3 /* CheckBoxView.swift */; };
+		C08E19842900F07200DEBEB3 /* OrderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19832900F07200DEBEB3 /* OrderItemView.swift */; };
+		C08E19862900F87400DEBEB3 /* LargeCheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19852900F87400DEBEB3 /* LargeCheckBoxView.swift */; };
+		C08E19882900FF4800DEBEB3 /* OrderCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19872900FF4800DEBEB3 /* OrderCalculateView.swift */; };
+		C08E198A290108DF00DEBEB3 /* MyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E1989290108DF00DEBEB3 /* MyScheduleView.swift */; };
+		C08E198C290108ED00DEBEB3 /* AddScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E198B290108ED00DEBEB3 /* AddScheduleView.swift */; };
+		C08E198E29015A8000DEBEB3 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E198D29015A8000DEBEB3 /* PricingView.swift */; };
+		C08E19902901612500DEBEB3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E198F2901612500DEBEB3 /* SettingView.swift */; };
+		C08E19922901647000DEBEB3 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19912901647000DEBEB3 /* PaymentView.swift */; };
+		C08E1994290165A500DEBEB3 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E1993290165A500DEBEB3 /* RewardsView.swift */; };
+		C08E1996290165F000DEBEB3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E1995290165F000DEBEB3 /* NotificationView.swift */; };
+		C08E199829024A2F00DEBEB3 /* ContactPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E199729024A2F00DEBEB3 /* ContactPopupView.swift */; };
+		C08E199A29027F1D00DEBEB3 /* EstimateDryCleanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E199929027F1D00DEBEB3 /* EstimateDryCleanView.swift */; };
+		C08E199C2902803E00DEBEB3 /* EstimateLaundryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E199B2902803E00DEBEB3 /* EstimateLaundryView.swift */; };
+		C08E19A02902811300DEBEB3 /* EstimateHomeCareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E199F2902811300DEBEB3 /* EstimateHomeCareView.swift */; };
+		C08E19A2290281BB00DEBEB3 /* EstimateShoeRepairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19A1290281BB00DEBEB3 /* EstimateShoeRepairView.swift */; };
+		C08E19A4290281D200DEBEB3 /* EstimateSportEquipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19A3290281D200DEBEB3 /* EstimateSportEquipView.swift */; };
+		C08E19A62902D21300DEBEB3 /* ScheduleDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19A52902D21300DEBEB3 /* ScheduleDeliveryView.swift */; };
+		C08E19A82902D80900DEBEB3 /* EstimateTailoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E19A72902D80900DEBEB3 /* EstimateTailoringView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +82,26 @@
 		C020CA5228F2817100807B74 /* OrderDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDeliveryView.swift; sourceTree = "<group>"; };
 		C020CA5428F28A1100807B74 /* NewAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddressView.swift; sourceTree = "<group>"; };
 		C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpInfoView.swift; sourceTree = "<group>"; };
+		C08E197F2900E6EB00DEBEB3 /* OrderSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSelect.swift; sourceTree = "<group>"; };
+		C08E19812900E9B000DEBEB3 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		C08E19832900F07200DEBEB3 /* OrderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemView.swift; sourceTree = "<group>"; };
+		C08E19852900F87400DEBEB3 /* LargeCheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCheckBoxView.swift; sourceTree = "<group>"; };
+		C08E19872900FF4800DEBEB3 /* OrderCalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCalculateView.swift; sourceTree = "<group>"; };
+		C08E1989290108DF00DEBEB3 /* MyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleView.swift; sourceTree = "<group>"; };
+		C08E198B290108ED00DEBEB3 /* AddScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleView.swift; sourceTree = "<group>"; };
+		C08E198D29015A8000DEBEB3 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
+		C08E198F2901612500DEBEB3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C08E19912901647000DEBEB3 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		C08E1993290165A500DEBEB3 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		C08E1995290165F000DEBEB3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C08E199729024A2F00DEBEB3 /* ContactPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPopupView.swift; sourceTree = "<group>"; };
+		C08E199929027F1D00DEBEB3 /* EstimateDryCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDryCleanView.swift; sourceTree = "<group>"; };
+		C08E199B2902803E00DEBEB3 /* EstimateLaundryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateLaundryView.swift; sourceTree = "<group>"; };
+		C08E199F2902811300DEBEB3 /* EstimateHomeCareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateHomeCareView.swift; sourceTree = "<group>"; };
+		C08E19A1290281BB00DEBEB3 /* EstimateShoeRepairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateShoeRepairView.swift; sourceTree = "<group>"; };
+		C08E19A3290281D200DEBEB3 /* EstimateSportEquipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateSportEquipView.swift; sourceTree = "<group>"; };
+		C08E19A52902D21300DEBEB3 /* ScheduleDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDeliveryView.swift; sourceTree = "<group>"; };
+		C08E19A72902D80900DEBEB3 /* EstimateTailoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateTailoringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,28 +134,48 @@
 		C020CA1628DAF2A200807B74 /* ios-edc-app */ = {
 			isa = PBXGroup;
 			children = (
+				C08E19912901647000DEBEB3 /* PaymentView.swift */,
 				C020CA1728DAF2A200807B74 /* ios_edc_appApp.swift */,
-				C020CA2F28DB457200807B74 /* SignInView.swift */,
-				C020CA1928DAF2A200807B74 /* ContentView.swift */,
-				C020CA2D28DB356800807B74 /* FontStyles.swift */,
-				C020CA2C28DB34FD00807B74 /* Info.plist */,
-				C020CA2528DB348B00807B74 /* Fonts */,
-				C020CA1B28DAF2A400807B74 /* Assets.xcassets */,
-				C020CA1D28DAF2A400807B74 /* Preview Content */,
-				C020CA3228DC093500807B74 /* ForgotPwdView.swift */,
 				C020CA3428DC899D00807B74 /* RegisterView.swift */,
+				C020CA2F28DB457200807B74 /* SignInView.swift */,
+				C020CA3228DC093500807B74 /* ForgotPwdView.swift */,
 				C020CA3828DDE6C400807B74 /* SendEmailView.swift */,
 				C020CA3A28DEDBA100807B74 /* CreatePwdView.swift */,
 				C020CA3C28DEEC0700807B74 /* MainPageView.swift */,
-				C020CA3E28DF413B00807B74 /* ShoppingCartView.swift */,
-				C020CA4028DF414A00807B74 /* PromotionView.swift */,
-				C020CA4228DF416F00807B74 /* AccountView.swift */,
 				C020CA4828DF458800807B74 /* NaviTabView.swift */,
 				C020CA4A28E1764F00807B74 /* OrderPickUpView.swift */,
-				C020CA5028EAF33700807B74 /* MembershipView.swift */,
-				C020CA5228F2817100807B74 /* OrderDeliveryView.swift */,
 				C020CA5428F28A1100807B74 /* NewAddressView.swift */,
 				C020CA5628F2DE5100807B74 /* PickUpInfoView.swift */,
+				C020CA5228F2817100807B74 /* OrderDeliveryView.swift */,
+				C020CA2C28DB34FD00807B74 /* Info.plist */,
+				C020CA2528DB348B00807B74 /* Fonts */,
+				C020CA1B28DAF2A400807B74 /* Assets.xcassets */,
+				C020CA4228DF416F00807B74 /* AccountView.swift */,
+				C020CA1D28DAF2A400807B74 /* Preview Content */,
+				C020CA3E28DF413B00807B74 /* ShoppingCartView.swift */,
+				C020CA4028DF414A00807B74 /* PromotionView.swift */,
+				C020CA5028EAF33700807B74 /* MembershipView.swift */,
+				C020CA2D28DB356800807B74 /* FontStyles.swift */,
+				C020CA1928DAF2A200807B74 /* ContentView.swift */,
+				C08E197F2900E6EB00DEBEB3 /* OrderSelect.swift */,
+				C08E19812900E9B000DEBEB3 /* CheckBoxView.swift */,
+				C08E19832900F07200DEBEB3 /* OrderItemView.swift */,
+				C08E19852900F87400DEBEB3 /* LargeCheckBoxView.swift */,
+				C08E19872900FF4800DEBEB3 /* OrderCalculateView.swift */,
+				C08E1989290108DF00DEBEB3 /* MyScheduleView.swift */,
+				C08E198B290108ED00DEBEB3 /* AddScheduleView.swift */,
+				C08E19A52902D21300DEBEB3 /* ScheduleDeliveryView.swift */,
+				C08E198D29015A8000DEBEB3 /* PricingView.swift */,
+				C08E198F2901612500DEBEB3 /* SettingView.swift */,
+				C08E1993290165A500DEBEB3 /* RewardsView.swift */,
+				C08E1995290165F000DEBEB3 /* NotificationView.swift */,
+				C08E199729024A2F00DEBEB3 /* ContactPopupView.swift */,
+				C08E199929027F1D00DEBEB3 /* EstimateDryCleanView.swift */,
+				C08E199B2902803E00DEBEB3 /* EstimateLaundryView.swift */,
+				C08E19A72902D80900DEBEB3 /* EstimateTailoringView.swift */,
+				C08E199F2902811300DEBEB3 /* EstimateHomeCareView.swift */,
+				C08E19A1290281BB00DEBEB3 /* EstimateShoeRepairView.swift */,
+				C08E19A3290281D200DEBEB3 /* EstimateSportEquipView.swift */,
 			);
 			path = "ios-edc-app";
 			sourceTree = "<group>";
@@ -216,23 +276,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				C020CA4328DF416F00807B74 /* AccountView.swift in Sources */,
+				C08E19A02902811300DEBEB3 /* EstimateHomeCareView.swift in Sources */,
+				C08E1994290165A500DEBEB3 /* RewardsView.swift in Sources */,
+				C08E19882900FF4800DEBEB3 /* OrderCalculateView.swift in Sources */,
 				C020CA3B28DEDBA100807B74 /* CreatePwdView.swift in Sources */,
 				C020CA5728F2DE5200807B74 /* PickUpInfoView.swift in Sources */,
+				C08E19802900E6EB00DEBEB3 /* OrderSelect.swift in Sources */,
+				C08E19A4290281D200DEBEB3 /* EstimateSportEquipView.swift in Sources */,
 				C020CA1A28DAF2A200807B74 /* ContentView.swift in Sources */,
+				C08E19A2290281BB00DEBEB3 /* EstimateShoeRepairView.swift in Sources */,
+				C08E199C2902803E00DEBEB3 /* EstimateLaundryView.swift in Sources */,
+				C08E19862900F87400DEBEB3 /* LargeCheckBoxView.swift in Sources */,
+				C08E19A82902D80900DEBEB3 /* EstimateTailoringView.swift in Sources */,
 				C020CA3328DC093500807B74 /* ForgotPwdView.swift in Sources */,
 				C020CA1828DAF2A200807B74 /* ios_edc_appApp.swift in Sources */,
 				C020CA3F28DF413B00807B74 /* ShoppingCartView.swift in Sources */,
 				C020CA5528F28A1100807B74 /* NewAddressView.swift in Sources */,
 				C020CA5128EAF33700807B74 /* MembershipView.swift in Sources */,
 				C020CA3528DC899D00807B74 /* RegisterView.swift in Sources */,
+				C08E19822900E9B000DEBEB3 /* CheckBoxView.swift in Sources */,
 				C020CA3928DDE6C400807B74 /* SendEmailView.swift in Sources */,
+				C08E198E29015A8000DEBEB3 /* PricingView.swift in Sources */,
 				C020CA4128DF414A00807B74 /* PromotionView.swift in Sources */,
+				C08E19922901647000DEBEB3 /* PaymentView.swift in Sources */,
 				C020CA3028DB457200807B74 /* SignInView.swift in Sources */,
 				C020CA2E28DB356800807B74 /* FontStyles.swift in Sources */,
 				C020CA4B28E1764F00807B74 /* OrderPickUpView.swift in Sources */,
+				C08E19A62902D21300DEBEB3 /* ScheduleDeliveryView.swift in Sources */,
 				C020CA5328F2817100807B74 /* OrderDeliveryView.swift in Sources */,
+				C08E199829024A2F00DEBEB3 /* ContactPopupView.swift in Sources */,
+				C08E19902901612500DEBEB3 /* SettingView.swift in Sources */,
 				C020CA3D28DEEC0700807B74 /* MainPageView.swift in Sources */,
+				C08E198A290108DF00DEBEB3 /* MyScheduleView.swift in Sources */,
+				C08E19842900F07200DEBEB3 /* OrderItemView.swift in Sources */,
+				C08E198C290108ED00DEBEB3 /* AddScheduleView.swift in Sources */,
 				C020CA4928DF458800807B74 /* NaviTabView.swift in Sources */,
+				C08E199A29027F1D00DEBEB3 /* EstimateDryCleanView.swift in Sources */,
+				C08E1996290165F000DEBEB3 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

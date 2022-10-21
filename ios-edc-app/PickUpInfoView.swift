@@ -11,10 +11,12 @@ struct PickUpInfoView: View {
     @State private var address = ""
     @State private var pickUpDate = Date()
     @State private var pickUpTime = Date()
-    
+
     @State private var showOrderDeliveryView = false
-    @EnvironmentObject var isClicked: btnIsClicked
-    
+    @Binding var homeBtnIsClicked: Bool
+    @Binding var workBtnIsClicked: Bool
+    @Binding var otherBtnIsClicked: Bool
+
     var body: some View {
         ZStack{
             Color("BackgroundColor")
@@ -30,35 +32,16 @@ struct PickUpInfoView: View {
                                 .frame(width:180)
                         }
                         HStack{
-
-//                            Button(action: {
-//                                //showNewAddressView = true
-//                                isClicked.clickHome = true
-//                            }, label: {
-//                                Image("btn-home")
-//                            })
-//                            Button(action: {
-//                                //showNewAddressView = true
-//                                isClicked.clickWork = true
-//                            }, label: {
-//                                Image("btn-work")
-//                            })
-//                            Button(action: {
-//                                //showNewAddressView = true
-//                                isClicked.clickOther = true
-//                            }, label: {
-//                                Image("btn-other")
-//                            })
+                            Image(homeBtnIsClicked ? "btn-home-bg" : "btn-home-stroke")
+                            Image(workBtnIsClicked ? "btn-work-bg" : "btn-work-stroke")
+                            Image(otherBtnIsClicked ? "btn-other-bg" : "btn-other-stroke")
                             Spacer()
                                 .frame(width:170)
                         }
                         Spacer()
                             .frame(height: 50)
-//                        NavigationLink("", destination:  NewAddressView(btnIsClicked: $showNewAddressView), isActive: $showNewAddressView)
-//                            .navigationBarTitleDisplayMode(.inline)
-//                            .navigationTitle("")
                     }
-                    
+
                     HStack{
                         Text("ADDRESS")
                             .font(.sansFont)
@@ -73,7 +56,7 @@ struct PickUpInfoView: View {
                         .background(Color.white)
                         .cornerRadius(60)
                         .shadow(color: .gray.opacity(0.7), radius: 8,x: 8,y: 8)
-                    
+
                     HStack{
                         Text("PICKUP DATE")
                             .font(.sansFont)
@@ -87,7 +70,7 @@ struct PickUpInfoView: View {
                         Spacer()
                             .frame(width: 240)
                     }
-                    
+
                     HStack{
                         Text("PICKUP TIME")
                             .font(.sansFont)
@@ -101,7 +84,7 @@ struct PickUpInfoView: View {
                         Spacer()
                             .frame(width: 265)
                     }
-                    
+
                     Spacer()
                         .frame(height: 60)
                     Button(action:{showOrderDeliveryView = true}){
@@ -109,21 +92,21 @@ struct PickUpInfoView: View {
                             .font(.btnLable)
                             .foregroundColor(Color.white)
                     }
-                    
+
                     .frame(width: 336, height: 49)
                     .background(Color("LinkColor"))
                     .cornerRadius(60)
                     .shadow(color: .gray.opacity(0.7), radius: 8,x: 8,y: 8)
                     .padding()
-                    
-                    NavigationLink("", destination:  OrderDeliveryView(), isActive: $showOrderDeliveryView)
+
+                    NavigationLink("", destination:  OrderDeliveryView(homeBtnIsClicked: $homeBtnIsClicked, workBtnIsClicked: $workBtnIsClicked, otherBtnIsClicked: $otherBtnIsClicked), isActive: $showOrderDeliveryView)
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationTitle("")
-                    
+
                 }
-                
+
             }
-            
+
         }
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
@@ -133,14 +116,16 @@ struct PickUpInfoView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .environmentObject(isClicked)
     }
-    
+
 }
 
 
 struct PickUpInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PickUpInfoView()
+        PickUpInfoView(
+            homeBtnIsClicked: .constant(true),
+            workBtnIsClicked: .constant(false),
+            otherBtnIsClicked: .constant(false))
     }
 }

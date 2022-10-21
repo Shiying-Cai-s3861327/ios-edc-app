@@ -13,6 +13,7 @@ struct SignInView: View {
     
     @State private var showRegisterView = false
     @State private var showTabView = false
+    @State private var checked = false
     
     var body: some View {
         NavigationView{
@@ -82,7 +83,7 @@ struct SignInView: View {
                     }
                     
                     HStack{
-                        Image("ic-checkbox")
+                        CheckBoxView(checked: $checked)
                         Text("Remember me")
                             .font(.cbLable)
                             .foregroundColor(Color("LabelColor"))

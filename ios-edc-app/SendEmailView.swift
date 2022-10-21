@@ -54,8 +54,6 @@ struct SendEmailView: View {
                     .padding()
                     
                     NavigationLink("", destination:  CreatePwdView(), isActive: $showCreatePwdView)
-                    
-                    
                 }
             }
                 

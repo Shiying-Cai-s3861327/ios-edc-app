@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-class btnIsClicked: ObservableObject{
-    @Published var clickHome = false;
-    @Published var clickWork = false
-    @Published var clickOther = false
-}
-
 struct OrderPickUpView: View {
     @State private var address = ""
     @State private var pickUpDate = Date()
@@ -20,7 +14,10 @@ struct OrderPickUpView: View {
     
     @State private var showOrderDeliveryView = false
     @State private var showNewAddressView = false
-    @StateObject var isClicked = btnIsClicked()
+    //@StateObject var isClicked = btnIsClicked()
+    @State private var homeBtnIsClicked = false
+    @State private var workBtnIsClicked = false
+    @State private var otherBtnIsClicked = false
 
     
     var body: some View {
@@ -40,19 +37,25 @@ struct OrderPickUpView: View {
                         HStack{
                             Button(action: {
                                 showNewAddressView = true
-                                isClicked.clickHome = true
+                                homeBtnIsClicked.toggle()
+                                workBtnIsClicked = false
+                                otherBtnIsClicked = false
                             }, label: {
                                 Image("btn-home")
                             })
                             Button(action: {
                                 showNewAddressView = true
-                                isClicked.clickWork = true
+                                workBtnIsClicked.toggle()
+                                homeBtnIsClicked = false
+                                otherBtnIsClicked = false
                             }, label: {
                                 Image("btn-work")
                             })
                             Button(action: {
                                 showNewAddressView = true
-                                isClicked.clickOther = true
+                                otherBtnIsClicked.toggle()
+                                homeBtnIsClicked = false
+                                workBtnIsClicked = false
                             }, label: {
                                 Image("btn-other")
                             })
@@ -61,7 +64,7 @@ struct OrderPickUpView: View {
                         }
                         Spacer()
                             .frame(height: 50)
-                        NavigationLink("", destination:  NewAddressView(btnIsClicked: $showNewAddressView), isActive: $showNewAddressView)
+                        NavigationLink("", destination:  NewAddressView(homeBtnIsClicked: $homeBtnIsClicked, workBtnIsClicked: $workBtnIsClicked, otherBtnIsClicked: $otherBtnIsClicked), isActive: $showNewAddressView)
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationTitle("")
                     }
@@ -123,7 +126,7 @@ struct OrderPickUpView: View {
                     .shadow(color: .gray.opacity(0.7), radius: 8,x: 8,y: 8)
                     .padding()
                     
-                    NavigationLink("", destination:  OrderDeliveryView(), isActive: $showOrderDeliveryView)
+                    NavigationLink("", destination:  OrderDeliveryView(homeBtnIsClicked: $homeBtnIsClicked, workBtnIsClicked: $workBtnIsClicked, otherBtnIsClicked: $otherBtnIsClicked), isActive: $showOrderDeliveryView)
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationTitle("")
                     
@@ -140,8 +143,8 @@ struct OrderPickUpView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .environmentObject(isClicked)
     }
+    
     
 }
 

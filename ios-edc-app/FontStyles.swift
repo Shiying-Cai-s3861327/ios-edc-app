@@ -14,6 +14,10 @@ extension Font{
         return Font.custom("SF Pro Display Bold", size: 14)
     }
     
+    static var popLable: Font{
+        return Font.custom("SF Pro Display Bold", size: 20)
+    }
+    
     static var btnLable: Font{
         return Font.custom("SF Pro Display Semibold", size: 24)
     }
@@ -30,12 +34,20 @@ extension Font{
         return Font.custom("SF Pro Display Semibold", size: 24)
     }
     
+    static var acctLable: Font{
+        return Font.custom("SF Pro Display Semibold", size: 25)
+    }
+    
     static var linkLable: Font{
         return Font.custom("SF Pro Display Medium", size: 14)
     }
     
     static var text: Font{
         return Font.custom("SF Pro", size: 16)
+    }
+    
+    static var itemText: Font{
+        return Font.custom("SF Pro Bold", size: 14)
     }
     
     static var sansFont: Font{

@@ -12,6 +12,7 @@ struct CreatePwdView: View {
     @State var confirmPwd = ""
 
     @State private var showEmailView = false
+    @State private var showLoginView = false
 
     var body: some View {
         ZStack{
@@ -75,7 +76,7 @@ struct CreatePwdView: View {
                         .frame(height: 100)
                         
                         HStack{
-                            Button(action:{showEmailView = true}){
+                            Button(action:{showLoginView = true}){
                                 // Some Actions here
                                 Text("Reset Password")
                                     .font(.custom("SF Pro Display Semibold", size: 15))
@@ -90,7 +91,7 @@ struct CreatePwdView: View {
                             Spacer()
                                 .frame(width: 190)
                             
-                            NavigationLink("", destination:  SendEmailView(), isActive: $showEmailView)
+                            NavigationLink("", destination:  SignInView(), isActive: $showLoginView)
                         }
                     }
                 }

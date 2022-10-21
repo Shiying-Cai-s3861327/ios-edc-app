@@ -10,6 +10,7 @@ import SwiftUI
 struct NaviTabView: View {
     var body: some View {
         TabView{
+            
             MainPageView()
                 .tabItem{
                     Image("ic-home")
@@ -24,12 +25,14 @@ struct NaviTabView: View {
                         .padding()
                 }
             
+            
             PromotionView()
                 .tabItem{
                     Image("ic-promotion")
                         .renderingMode(.template)
                         .padding()
                 }
+
             
             AccountView()
                 .tabItem{

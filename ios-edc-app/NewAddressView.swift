@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewAddressView: View {
-    @Binding var btnIsClicked: Bool
+    //@Binding var btnIsClicked: Bool
     
     @State private var isExpanded = false
     @State private var selectedString = ""
@@ -21,6 +21,10 @@ struct NewAddressView: View {
     @State private var postalCode = ""
     
     @State private var showPickUpInfoView = false
+    
+    @Binding var homeBtnIsClicked: Bool
+    @Binding var workBtnIsClicked: Bool
+    @Binding var otherBtnIsClicked: Bool
     
     var body: some View {
         ZStack{
@@ -160,7 +164,7 @@ struct NewAddressView: View {
                         Spacer()
                             .frame(width: 240)
                     }
-                    NavigationLink("", destination:  PickUpInfoView(), isActive: $showPickUpInfoView)
+                    NavigationLink("", destination:  PickUpInfoView(homeBtnIsClicked: $homeBtnIsClicked, workBtnIsClicked: $workBtnIsClicked, otherBtnIsClicked: $otherBtnIsClicked), isActive: $showPickUpInfoView)
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationTitle("")
                 }
@@ -182,6 +186,7 @@ struct NewAddressView: View {
 
 struct NewAddressView_Previews: PreviewProvider {
     static var previews: some View {
-        NewAddressView(btnIsClicked: .constant(true))
+        NewAddressView(homeBtnIsClicked: .constant(true),workBtnIsClicked: .constant(true),
+                       otherBtnIsClicked: .constant(true))
     }
 }

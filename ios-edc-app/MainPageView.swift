@@ -11,6 +11,7 @@ struct MainPageView: View {
     @State private var showOrderPickUpView = false
     @State private var showMembershipView = false
 
+    @State private var userName: String = "Roni"
     
     var body: some View {
         ZStack{
@@ -28,7 +29,7 @@ struct MainPageView: View {
                 Spacer()
                     .frame(height: 50)
                 VStack(alignment: .center){
-                    Text("Hi Roni")
+                    Text("Hi " + userName)
                         .font(.custom("SF Pro Display Bold", size: 26))
                         
                     Text("What can we do for you \n today")
@@ -73,10 +74,6 @@ struct MainPageView: View {
                         NavigationLink("", destination:  MembershipView(), isActive: $showMembershipView)
 
                     }
-                }
-                
-                HStack{
-                
                 }
             }
             
