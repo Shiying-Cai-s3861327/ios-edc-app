@@ -56,9 +56,9 @@ struct EstimatePriceView: View {
                         case "Shoe Repair":
                             PricingShoeTab(contactAlert: $contactAlert)
                         case "Sports Equipment":
-                            Text(orderItem)
+                            PricingSportTab()
                         default:
-                            Text("Hello")
+                            PricingDryCleaningTab()
                         }
                     }
                     VStack{
