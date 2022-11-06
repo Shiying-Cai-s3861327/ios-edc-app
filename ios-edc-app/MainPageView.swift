@@ -17,30 +17,25 @@ struct MainPageView: View {
         ZStack{
             Image("img-cloth")
                 .position(x: 200,y:500)
-            VStack(alignment: .center){
-                HStack{
+            VStack(alignment: .center, spacing: 180){
+                VStack(spacing: 60){
                     Image("ic-logo")
                         .resizable()
                         .frame(width: 336.25, height: 144)
                         .scaledToFit()
                         .padding()
-                        
-                }
-                Spacer()
-                    .frame(height: 50)
-                VStack(alignment: .center){
-                    Text("Hi " + userName)
-                        .font(.custom("SF Pro Display Bold", size: 26))
-                        
-                    Text("What can we do for you \n today")
-                        .font(.custom("SF Pro Display Medium", size: 20))
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                    
+                    VStack(alignment: .center){
+                        Text("Hi " + userName)
+                            .font(.custom("SF Pro Display Bold", size: 26))
+                            
+                        Text("What can we do for you \n today")
+                            .font(.custom("SF Pro Display Medium", size: 20))
+                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                    }
                 }
                 VStack{
-                    Spacer()
-                        .frame(height: 200)
-                    
                     HStack{
                         Button(action:{showOrderPickUpView = true}){
                             // Some Actions here

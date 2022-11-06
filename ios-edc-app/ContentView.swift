@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  ios-edc-app
 //
-//  Created by 蔡释莹 on 2022/9/21.
+//  Created by Shiying Cai on 2022/9/21.
 //
 
 import SwiftUI
